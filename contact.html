@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./styles/accueil_style.css">
+		<link rel="stylesheet" href="./styles/activité_style.css">
+		<link rel="stylesheet" href="./styles/contact_style.css">
+		<link rel="stylesheet" href="./styles/element_principal_style.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<title>TURING PARK</title>
+		<link rel="shortcut icon" type="image/png" href="./images/images_logo/logo_cwad.png">
+	</head>
+	<body>
+		<header>
+			<div class="fond">
+				<div class="cubes">
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubegris"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubegris"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+					<div class="cubeblanc"></div>
+				</div>
+				<h1>TURING PARK</h1>
+			</div>
+			<h2>L'innovation à votre service.</h2>
+			<h3> contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact</h3>
+			<div class="tirets">
+				<div class="tiret"></div>
+				<div class="tiret"></div>
+				<div class="tiret"></div>
+				<div class="tiret"></div>
+				<div class="tiret"></div>
+				<div class="tiret"></div>
+			</div>
+		</header>
+		<nav>
+			<a href="./index.html"><img src="./images/images_logo/logo_cwad.png" alt="logo de TURING PARK"></a>
+			<a href="./index.html">index</a>
+			<a href="./activité.html">activités</a>
+			<a href="./contact.html">contact</a>
+		</nav>
+		<main>
+			<article>
+				<h2>Contact</h2>
+				<ul>
+					<li>Adresse : 42 Boulevard des Machines Pensantes, Wilmslow, Cheshire, SK9 1QR, Royaume-Uni</li>
+					<li>Télephone : +44 1625 613413</li>
+					<li>Mail : <a href="mailto:contact@turingpark.com">contact@turingpark.com</a></li>
+				</ul>
+			</article>
+			<article id="formulaire">
+				<h2>Formulaire de réservation</h2>
+				<form>
+					<label for="prenom">Prénom</label>
+					<input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+					<label for="activites">Activités</label>
+					<select id="activites" name="attraction" required>
+						<option value="">Sélectionnez une activité</option>
+						<option value="exposition_turing">Alan Turing naquit et l'informatique fut</option>
+						<option value="attraction_tri">Tri infernal</option>
+						<option value="atelier_reseau">Le réseau vivant</option>
+						<option value="film_quantum_mania">Quantum Mania</option>
+						<option value="conference_architecture">L'architecture des ordinateurs ou comment faire vivre une machine ?</option>
+					</select>
+					<label for="heure">Horaire</label>
+					<input type="time" min="08:00" max="21:00" id="heure" required>
+					<label for="date">Date</label>
+					<input type="date" id="date" min="2024-11-29" required>
+					<button type="submit">Réserver</button>
+				</form>
+			</article>
+			<article>
+				<h2>Localisation</h2>
+				<div class="localisation">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d595.8787366422483!2d-2.239011515102414!3d53.31613266028362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s42%20Boulevard%20des%20Machines%20Pensantes%2C%20Wilmslow%2C%20Cheshire%2C%20SK9%201QR%2C%20Royaume-Uni!5e0!3m2!1sfr!2sfr!4v1732444468475!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<p>
+				Membres du projet: Otman Benbouziane - Ethan Ngoudiabountou
+			</p>
+			<img src="./images/images_logo/logo_iut_orsay.jpg" alt="logo de l'iut">
+			<address>
+				<a href="./rapport/Rapport_CWAD.docx">rapport au format "docx"</a>
+				<br>
+				<a href="./rapport/Rapport_CWAD.pdf">rapport au format "pdf"</a>
+			</address>
+		</footer>
+	</body>
+</html>
+
