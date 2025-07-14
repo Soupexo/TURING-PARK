@@ -1,0 +1,233 @@
+@charset "UTF-8";
+:root
+{
+	--Bleu: #2e85ff;
+	--Gris: #1e2124;
+}
+
+@font-face
+{
+	font-family: 'Orbitron';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+div.detail_activite
+{
+	margin: 10px auto;
+	justify-content: center;
+	max-width: 60%;
+	margin-top: 8rem;
+}
+
+details
+{
+	border: thick double #007BFF;
+	border-radius: 8px;
+	padding: 2rem;
+	font-size: 1.2rem;
+	min-width: 80%;
+	margin-bottom: 8rem;
+	background-color: #f9f9f9;
+	overflow: auto;
+}
+
+div details p
+{
+	margin-top: 0;
+	margin-left: 5rem;
+	font-family: 'Orbitron', sans-serif;
+	color: var(--Bleu,#2e85ff);
+	font-size: 1.5rem;
+	word-wrap: break-word;
+}
+
+div details h2
+{
+	font-family: 'Orbitron', sans-serif;
+	color: var(--Gris,#1e2124);
+	font-size: 2rem;
+	font-weight: bold;
+	margin-left: 5rem;
+	word-wrap: break-word;
+}
+
+div details img
+{
+	width: 6vw;
+	height:6vw;
+	margin-left: 8px;
+	margin-top: 1.5rem;
+	float: left;
+}
+
+div details a
+{
+	background-color: var(--Bleu,#2e85ff);
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	text-decoration: 3px dotted underline white;
+}
+
+div details a:hover
+{
+	text-decoration: none;
+	background-color: #f9f9f9;
+	color: var(--Bleu,#2e85ff);
+}
+
+summary
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #007BFF;
+	cursor: pointer;
+	outline: none;
+	font-family:'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+summary:hover
+{
+	color: #0056b3;
+}
+
+details[open]#exposition
+{
+	border-style: solid;
+	background-image: url('../images/images_activite/exposition_turing.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+details[open]#attraction
+{
+	border-style: solid;
+	background-image: url('../images/images_activite/attraction_tri.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+details[open]#atelier
+{
+	border-style: solid;
+	background-image: url('../images/images_activite/atelier_reseau.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+details[open]#quantum_mania
+{
+	border-style: solid;
+	background-image: url('../images/images_activite/quantum_mania.png');
+	background-size: cover;
+	background-position: center;
+}
+
+details[open]#conference
+{
+	border-style: solid;
+	background-image: url('../images/images_activite/conference_archi.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+details[open]#exposition h2,details[open]#attraction h2,details[open]#attraction summary,details[open]#conference h2,details[open]#conference p, details[open]#conference summary, details[open]#quantum_mania  p, details[open]#quantum_mania  h2,details[open]#quantum_mania  summary
+{
+	color:white;
+}
+
+details[open] summary
+{
+	color: var(--Gris,#1e2124);
+}
+
+/* Environ 200% de zoom d'ecran */
+@media (max-width: 768px)
+{
+	details
+	{
+		padding: 1rem;
+		font-size: 1rem;
+		max-width: 95%;
+	}
+
+	div details p
+	{
+		font-size: 1.2rem;
+	}
+
+	div details h2
+	{
+		font-size: 1.5rem;
+	}
+
+	div details img
+	{
+		width: 8vw;
+		height:8vw;
+	}
+}
+
+/* Environ 400% de zoom d'ecran */
+@media (max-width: 480px)
+{
+	details
+	{
+		padding: 0.8rem;
+		max-width: 100%;
+	}
+
+	div details p
+	{
+		font-size: 1rem;
+	}
+
+	div details h2
+	{
+		font-size: 1.2rem;
+	}
+
+	div details img
+	{
+		width: 14vw;
+		height:14vw;
+	}
+}
+
+/* Environ 500% de zoom d'ecran */
+@media (max-width: 350px)
+{
+	details
+	{
+		padding: 1rem;
+	}
+
+	div details p
+	{
+		font-size: 0.8rem;
+		margin-left: 1rem;
+	}
+
+	div details h2
+	{
+		font-size: 1rem;
+		margin-left: 0;
+	}
+
+	div details img
+	{
+		width: 12vw;
+		height:12vw;
+	}
+}
